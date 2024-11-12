@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!---------------
+              TAB
+        ---------------->
+		<title>MGWR PC | Feedbacks</title>
+		<link rel="icon" href="Images/Tab Icon.png" type="Images/x-icon" />
+
+		<!---------------
+            CSS & JS
+        ---------------->
+		<link rel="stylesheet" href="css/mainstyle.css" />
+		<link rel="stylesheet" href="css/customer-feedback.css" />
+		<script src="js/mainscript.js"></script>
+		<script src="js/admin-feedback.js"></script>
+
+		<!---------------
+              FONTS
+        ---------------->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!---------------
+              ICONS
+        ---------------->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+		/>
+	</head>
+
+	<body>
+		<!---------------
+              NAVBAR
+        ---------------->
+		<header class="header">
+			<a href="index.html"
+				><img src="Images/MGWR PC Logo.png" alt="" class="logo"
+			/></a>
+
+			<input type="checkbox" id="check" />
+			<label for="check" class="icons">
+				<img src="Images/Menu.png" alt="" id="menu-icon" />
+				<img src="Images/MenuX.png" alt="" id="close-icon" />
+			</label>
+
+			<nav class="navbar">
+				<a href="index.html" style="--i: 1">Home</a>
+				<a href="customer-aboutus.html" style="--i: 1">About Us</a>
+				<a href="customer-pricelist.html" style="--i: 2">Pricelist</a>
+				<a class="active" href="customer-feedback.html" style="--i: 0"
+					>Feedbacks</a
+				>
+				<a href="customer-faqs.html" style="--i: 4">FAQs</a>
+			</nav>
+		</header>
+
+		<!---------------
+              TABLES
+        ---------------->
+		<h1 class="heading1" id="question">Customers Feedbacks</h1>
+		<p class="sentence1">
+			Share your thoughts! Help us improve. Your feedback matters!
+		</p>
+
+		<main class="table" id="customers_table">
+			<section class="table__body">
+				<table>
+					<thead>
+						<tr>
+							<th>Customer</th>
+							<th>Feedback</th>
+							<th>Rating</th>
+							<th>Tags</th>
+						</tr>
+					</thead>
+
+					<tbody class="center-align">
+						<tr data-review-id="1">
+							<td class="center-content">John Doe</td>
+							<td
+								class="feedback-cell justify-comment"
+								onclick="toggleFeedback(this)"
+							>
+								<span class="short-feedback"
+									>Great service and friendly staff...</span
+								>
+								<span class="full-feedback" style="display: none"
+									>Great service and friendly staff, will definitely come
+									back!</span
+								>
+							</td>
+							<td class="center-content">
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+							</td>
+							<td class="center-content">
+								<span
+									style="
+										display: inline-block;
+										padding: 5px 10px;
+										margin: 5px;
+										border-radius: 10px;
+										width: 200px;
+										height: 40px;
+										line-height: 30px;
+										text-align: center;
+										background-color: #586994;
+										color: black;
+										border: 1px solid black;
+										font-weight: 600;
+										cursor: default;
+									"
+									>First Time Buyer</span
+								>
+								<span
+									style="
+										display: inline-block;
+										padding: 5px 10px;
+										margin: 5px;
+										border-radius: 10px;
+										width: 200px;
+										height: 40px;
+										line-height: 30px;
+										text-align: center;
+										background-color: #7d869c;
+										color: black;
+										border: 1px solid black;
+										font-weight: 600;
+										cursor: default;
+									"
+									>Regular Customer</span
+								>
+							</td>
+						</tr>
+
+						<tr data-review-id="2">
+							<td class="center-content">Jane Smith</td>
+							<td
+								class="feedback-cell justify-comment"
+								onclick="toggleFeedback(this)"
+							>
+								<span class="short-feedback"
+									>Absolutely love this place...</span
+								>
+								<span class="full-feedback" style="display: none"
+									>Absolutely love this place! Great products and reliable
+									service.</span
+								>
+							</td>
+							<td class="center-content">
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+								<i
+									class="bx bxs-star"
+									style="
+										font-size: 26px;
+										color: yellow;
+										filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+									"
+								></i>
+							</td>
+							<td class="center-content">
+								<span
+									style="
+										display: inline-block;
+										padding: 5px 10px;
+										margin: 5px;
+										border-radius: 10px;
+										width: 200px;
+										height: 40px;
+										line-height: 30px;
+										text-align: center;
+										background-color: #a2abab;
+										color: black;
+										border: 1px solid black;
+										font-weight: 600;
+										cursor: default;
+									"
+									>Budget Shopper</span
+								>
+								<span
+									style="
+										display: inline-block;
+										padding: 5px 10px;
+										margin: 5px;
+										border-radius: 10px;
+										width: 200px;
+										height: 40px;
+										line-height: 30px;
+										text-align: center;
+										background-color: #b4c4ae;
+										color: black;
+										border: 1px solid black;
+										font-weight: 600;
+										cursor: default;
+									"
+									>Brand Loyalist</span
+								>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		<script>
+			function toggleFeedback(element) {
+				const shortFeedback = element.querySelector(".short-feedback");
+				const fullFeedback = element.querySelector(".full-feedback");
+
+				if (shortFeedback.style.display === "none") {
+					shortFeedback.style.display = "inline";
+					fullFeedback.style.display = "none";
+				} else {
+					shortFeedback.style.display = "none";
+					fullFeedback.style.display = "inline";
+				}
+			}
+		</script>
+
+		<!---------------
+           CONTACT US
+        ---------------->
+		<div class="contactus">
+			<p>Please Rate Your Experience</p>
+			<a class="btn-fdbck" id="leaveFeedbackBtn" href="customer-itemreview.html"
+				>Leave a Review</a
+			>
+		</div>
+
+		<!---------------
+             FOOTER
+        ---------------->
+		<footer class="footer">
+			<div class="footer-content">
+				<span class="logo2">MGWR PC</span>
+				<p>
+					Committed in providing you with the best Computer parts and
+					accessories, with a focus on product quality, best service, and
+					real-time assistance.
+				</p>
+			</div>
+
+			<div class="footer-content">
+				<h4>Company</h4>
+				<ul>
+					<li><a href="customer-contact-us.html">Contact Us</a></li>
+					<li><a href="customer-faqs.html">FAQs</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-content">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="customer-privacy.html">Privacy Policy</a></li>
+					<li><a href="customer-terms.html">Terms of Service</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-content">
+				<h4>Connect With Us</h4>
+				<div class="icons2">
+					<a href="https://www.facebook.com/mgwrpc"
+						><img src="Images/fbicon.png" alt=""
+					/></a>
+					<a href="https://www.instagram.com/mgwrpc"
+						><img src="Images/igicon.png" alt=""
+					/></a>
+					<a href="https://www.tiktok.com/@mgwrpctrading"
+						><img src="Images/tticon.png" alt=""
+					/></a>
+				</div>
+			</div>
+		</footer>
+
+		<!---------------
+           COPYRIGHTS
+        ---------------->
+		<div class="copyrights">
+			<p>Copyrights 2024 <span>MGWR PC</span> All Rights Reserved</p>
+		</div>
+	</body>
+</html>
